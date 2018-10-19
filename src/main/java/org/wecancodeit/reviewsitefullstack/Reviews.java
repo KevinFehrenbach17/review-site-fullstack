@@ -3,6 +3,7 @@ package org.wecancodeit.reviewsitefullstack;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Reviews {
@@ -14,14 +15,13 @@ public class Reviews {
 	private String rName;
 	private String rDesc;
 
-	public Reviews(String rName, String rDesc) {
-		super();
+	@ManyToOne
+	private Category category;
+
+	public Reviews(String rName, String rDesc, Category category) {
 		this.rName = rName;
 		this.rDesc = rDesc;
-	}
-
-	public Reviews() {
-
+		this.category = category;
 	}
 
 	public Long getId() {
