@@ -1,7 +1,7 @@
 package org.wecancodeit.reviewsitefullstack;
 
-public interface ReviewRepository {
+import org.springframework.data.repository.CrudRepository;
 
-	Object findById(Long id);
+public interface ReviewRepository extends CrudRepository<Reviews, Long> {
 
 }

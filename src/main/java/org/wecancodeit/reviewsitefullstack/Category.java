@@ -1,8 +1,11 @@
 package org.wecancodeit.reviewsitefullstack;
 
+import java.util.Collection;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 @Entity
 public class Category {
@@ -14,6 +17,9 @@ public class Category {
 
 	private String cName;
 	private String cDesc;
+
+	@OneToMany(mappedBy = "category")
+	private Collection<Reviews> reviews;
 
 	public Category(String cName, String cDesc) {
 		super();
@@ -35,6 +41,10 @@ public class Category {
 
 	public String getcDesc() {
 		return cDesc;
+	}
+
+	public Collection<Reviews> getReviews() {
+		return reviews;
 	}
 
 }
