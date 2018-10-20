@@ -18,6 +18,10 @@ public class Reviews {
 	@ManyToOne
 	private Category category;
 
+	public Reviews() {
+
+	}
+
 	public Reviews(String rName, String rDesc, Category category) {
 		this.rName = rName;
 		this.rDesc = rDesc;
