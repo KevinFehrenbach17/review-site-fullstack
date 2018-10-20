@@ -5,6 +5,7 @@ import java.util.Collection;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Lob;
 import javax.persistence.OneToMany;
 
 @Entity
@@ -39,6 +40,7 @@ public class Category {
 		return cName;
 	}
 
+	@Lob
 	public String getcDesc() {
 		return cDesc;
 	}

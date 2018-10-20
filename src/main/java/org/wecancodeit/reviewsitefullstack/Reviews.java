@@ -3,6 +3,7 @@ package org.wecancodeit.reviewsitefullstack;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Lob;
 import javax.persistence.ManyToOne;
 
 @Entity
@@ -36,6 +37,7 @@ public class Reviews {
 		return rName;
 	}
 
+	@Lob
 	public String getrDesc() {
 		return rDesc;
 	}
