@@ -13,10 +13,13 @@ public class ReviewController {
 	@Resource
 	ReviewRepository reviewRepo;
 
+	@Resource
+	CategoryRepository categoryRepo;
+
 	@GetMapping("/reviews")
 	public String getReviews(Model model) {
 
-		model.addAttribute("reviews", reviewRepo.findAll());
+		model.addAttribute("categories", categoryRepo.findAll());
 		return "reviews";
 	}
 

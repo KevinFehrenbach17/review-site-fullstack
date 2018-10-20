@@ -26,15 +26,15 @@ public class ReviewPopulator implements CommandLineRunner {
 		categoryRepo.save(categoryThree);
 		categoryRepo.save(categoryFour);
 
-		Reviews reviewsOne = new Reviews("Budweiser", "King of Generic Beers", categoryOne);
-		Reviews reviewsTwo = new Reviews("Miller Lite", "Watery, fizzy low-cal beer", categoryOne);
-		Reviews reviewsThree = new Reviews("Rhinegeist Truth ", "Very popular Cincinnati, Ohio beer", categoryTwo);
-		Reviews reviewsFour = new Reviews("Elvis Juice", "Grapefruit IPA. Good but pricey", categoryTwo);
-		Reviews reviewsFive = new Reviews("Hi-Wire Gose", "Salty and sour.", categoryThree);
-		Reviews reviewsSix = new Reviews("Wicked Weed Serenity",
+		Review reviewsOne = new Review("Budweiser", "King of Generic Beers", categoryOne);
+		Review reviewsTwo = new Review("Miller Lite", "Watery, fizzy low-cal beer", categoryOne);
+		Review reviewsThree = new Review("Rhinegeist Truth ", "Very popular Cincinnati, Ohio beer", categoryTwo);
+		Review reviewsFour = new Review("Elvis Juice", "Grapefruit IPA. Good but pricey", categoryTwo);
+		Review reviewsFive = new Review("Hi-Wire Gose", "Salty and sour.", categoryThree);
+		Review reviewsSix = new Review("Wicked Weed Serenity",
 				"Mimics the flavor of New Zealand Sauvigon Blanc wine.", categoryThree);
-		Reviews reviewsSeven = new Reviews("Guiness Stout", "Classic, popluar stout from Ireland", categoryFour);
-		Reviews reviewsEight = new Reviews("Left-Hand Milk Stout", "Creamy and very popular.", categoryFour);
+		Review reviewsSeven = new Review("Guiness Stout", "Classic, popluar stout from Ireland", categoryFour);
+		Review reviewsEight = new Review("Left-Hand Milk Stout", "Creamy and very popular.", categoryFour);
 
 		reviewRepo.save(reviewsOne);
 		reviewRepo.save(reviewsTwo);
