@@ -9,6 +9,7 @@
 <body>
 	<div class="container">	
 		<h1 th:text="${review.getrName()}"> </h1>
+			<h2 th:text="${review.category.cName}"></h2>
 			<p th:text="${review.getrDesc()}"> </p>
 
 		<a href = "/reviews">go back</a>
