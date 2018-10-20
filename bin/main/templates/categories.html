@@ -2,9 +2,13 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/css/layout.css">
+
 	<title>	Categories</title>
 </head>
 <body>
+	<div class="container">
 
 <header>
 	<h1> Beer Categories</h1>
@@ -13,7 +17,8 @@
 			<li th:each="category : ${categories}">
 				<a th:href="|/categories/${category.id}|" th:text="|${category.cName}|"></a>:
 			</li>
-		</ul>		
+		</ul>
+	</div>		
 		
 </body>
 </html>

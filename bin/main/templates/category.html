@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/css/layout.css">
+
 	<title>	Category Information </title>
 </head>
 <body>
+		<div class="container">
 		<h1 th:text="${category.cName}"> </h1>
 			<p th:text="${category.cDesc}"> </p>
 
-		<a href = "/reviews">go back</a>
-
+		<a href = "/categories">go back</a>
+		</div>
 
 
 

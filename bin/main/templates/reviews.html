@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <link rel="stylesheet" type="text/css" href="/css/style.css">
+<link rel="stylesheet" type="text/css" href="/css/layout.css">
 <head>
 
 	<title>	Review Site</title>
 </head>
+<div class="container">
 <body>
 
 <header>
@@ -14,7 +16,9 @@
 			<li th:each="review : ${reviews}">
 				<a th:href="|/reviews/${review.id}|" th:text="|${review.rName}|"></a>:
 			</li>
-		</ul>		
-		
+		</ul>
+
+		<a href="/categories"> Go to Category</a>		
+</div>	
 </body>
 </html>
