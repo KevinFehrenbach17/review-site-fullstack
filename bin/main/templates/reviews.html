@@ -1,1 +1,20 @@
-aaaaaa
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+<head>
+
+	<title>	Review Site</title>
+</head>
+<body>
+
+<header>
+	<h1> Beer Reviews</h1>
+</header>
+		<ul>
+			<li th:each="review : ${reviews}">
+				<a th:href="|/reviews/${review.id}|" th:text="|${review.rName}|"></a>:
+			</li>
+		</ul>		
+		
+</body>
+</html>
