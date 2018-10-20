@@ -3,8 +3,26 @@
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
-	width: 1000px;
-	height: auto;
-	margin-right: auto;
+	width: 1500px;
+	height: 1000px;
 	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-top: auto;
+}
+
+ul{
+	display: flex;
+	flex: column;
+	justify-content: space-between;
+
+}
+
+li{
+	display: flex;
+	flex: column;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	text-align: center;
+	margin: 10px;
 }

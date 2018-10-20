@@ -42,4 +42,14 @@ public class Reviews {
 		return rDesc;
 	}
 
+	@Override
+	public String toString() {
+		return "Reviews [rName=" + rName + ", rDesc=" + rDesc + ", category=" + category + "]";
+	}
+
+	public Category getCategory() {
+		return category;
+
+	}
+
 }
